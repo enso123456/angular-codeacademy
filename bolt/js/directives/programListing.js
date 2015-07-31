@@ -2,7 +2,7 @@
    'use strict';
 
    angular
-   .module('BoltNetworkApp',[])
+   .module('BoltNetworkApp')
    .directive('programListing', programListing)
 
    function programListing() {
