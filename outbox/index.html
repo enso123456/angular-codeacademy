@@ -16,18 +16,13 @@
    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
    <link href="css/main.css" rel="stylesheet" />
    <script src="../assets/js/angular.min.js"></script>
+   <script src="../assets/js/angular-ui-router.min.js"></script>
 
 </head>
 <body ng-app="OutboxApp" >
   <div class="main">
     <div class="container" ng-controller="MailController">
-
-      <div class="email" ng-repeat="email in emails">
-        <span class="from">{{email.from}} </span>
-        <span class="subject">{{email.subject}}</span>
-        <span class="date">{{email.datetime | date}}</span>
-      </div>
-
+      <div ui-view></div>
     </div>
   </div>
 
