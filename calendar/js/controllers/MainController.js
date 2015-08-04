@@ -14,7 +14,7 @@
 
    function EventController($scope, events, $stateParams) {
       events.success(function(responseData) {
-         $scope.event = responseData[$stateParams.id];
+         $scope.event = responseData.events[$stateParams.id];
       })
    }
 })()
